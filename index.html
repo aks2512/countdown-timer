@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="launch-countdown-timer-main/style.css">
+  <style>
+
+    .sky h1 {
+        margin-bottom: 20px!important;
+    }
+
+    .sky ul {
+        margin-top: 40px;
+    }
+
+    .sky li {
+        margin-bottom: 10px;
+    }
+
+    .sky svg {
+        margin-left: 10px;
+    }
+
+    .sky p, .sky a {
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: white;
+    }
+
+    .attribution a {
+      color: hsl(228, 18%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="countdown">
+    <div class="sky">
+      <h1>countdown-timer</h1>
+      <ul>
+        <li>
+            <a href="/launch-countdown-timer-main-flipclock/index.html">Solução 1 (JS, CSS, HTML, SCSS, JQuery, Flipclock) 
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="18" height="18" fill="url(#pattern0)"/>
+                    <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_33_35" transform="scale(0.0111111)"/>
+                        </pattern>
+                        <image id="image0_33_35" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACRElEQVR4nO3cSU4bQRSH8QIpDFEOAPcJZyHDYVAYBDvuwAJxAUSmo6AMIpgdHyrxFgS5AaN6r57d/5/kFU119+dS2+5uuxQRERERERHpB3gLHAB/aOcS+AKsd9y1XIAj/Oz03r8UgGVg4hj6svc+jiX0be99HMuhg977lwawDuwBvxU6EWAFONGMThRZh46gyAodFFmhZwCsAqfP9Bz8+yzrGi1eNpPPgLUuoW0DPwMXwD/ymQBbjWbyqi0/lWfkTeAneU1aRw4PbTN5dJGroQWLBztcjC5yNbRw8QB8ZYSRq6F/KB6AK3JGft/q3cUTY4SGjltZIy0i2zgK7R3ZxlJo78g2nkK3fuGbZuB89q/iIfRZTRTZxt2fMs7ua7dzrkPjFPnBlZp6WezaHodutxtkDo1j5EfrWaqPdls+R6FpFPm5Dz1hMoam3fvkrfrhp2SQLTSNI/eeNClD4xBZoYMiK3RQZIV2eAs3dE9eyWBoz4LWvTK35y5m1WvjaBzZxlRo78g2rkJ7R7axFTri3IVCG7un2SWyja8Zzf1XIq69Iiv0/6FvvCLbOjSjK+DYK7KNr9AV8M5i39j9JDutItv4Cv2Q19UMhQ6i0EEUOohCB1HoIAodRKGDKHQQhQ6i0EEUOohCB1HoIAodRKGDKHQQhQ6i0EEUOohCB8keOuOvG7T0t2Rgv6G0yM5LBsAnFtuHkoHdRvuDxfQNeFOyADaA7yxe5I2STX3mgY/1mDbHL5BXtv3bqWayiIiIiIiIiEjJ7Q5Ia9XvvzH68wAAAABJRU5ErkJggg=="/>
+                    </defs>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="/launch-countdown-timer-main/index.html">Solução 2 (JS, CSS, HTML, SCSS) 
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="18" height="18" fill="url(#pattern0)"/>
+                    <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_33_35" transform="scale(0.0111111)"/>
+                        </pattern>
+                        <image id="image0_33_35" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACRElEQVR4nO3cSU4bQRSH8QIpDFEOAPcJZyHDYVAYBDvuwAJxAUSmo6AMIpgdHyrxFgS5AaN6r57d/5/kFU119+dS2+5uuxQRERERERHpB3gLHAB/aOcS+AKsd9y1XIAj/Oz03r8UgGVg4hj6svc+jiX0be99HMuhg977lwawDuwBvxU6EWAFONGMThRZh46gyAodFFmhZwCsAqfP9Bz8+yzrGi1eNpPPgLUuoW0DPwMXwD/ymQBbjWbyqi0/lWfkTeAneU1aRw4PbTN5dJGroQWLBztcjC5yNbRw8QB8ZYSRq6F/KB6AK3JGft/q3cUTY4SGjltZIy0i2zgK7R3ZxlJo78g2nkK3fuGbZuB89q/iIfRZTRTZxt2fMs7ua7dzrkPjFPnBlZp6WezaHodutxtkDo1j5EfrWaqPdls+R6FpFPm5Dz1hMoam3fvkrfrhp2SQLTSNI/eeNClD4xBZoYMiK3RQZIV2eAs3dE9eyWBoz4LWvTK35y5m1WvjaBzZxlRo78g2rkJ7R7axFTri3IVCG7un2SWyja8Zzf1XIq69Iiv0/6FvvCLbOjSjK+DYK7KNr9AV8M5i39j9JDutItv4Cv2Q19UMhQ6i0EEUOohCB1HoIAodRKGDKHQQhQ6i0EEUOohCB1HoIAodRKGDKHQQhQ6i0EEUOohCB8keOuOvG7T0t2Rgv6G0yM5LBsAnFtuHkoHdRvuDxfQNeFOyADaA7yxe5I2STX3mgY/1mDbHL5BXtv3bqWayiIiIiIiIiEjJ7Q5Ia9XvvzH68wAAAABJRU5ErkJggg=="/>
+                    </defs>
+                </svg>
+            </a>
+        </li>
+      </ul>
+      
+    </div>
+    <div class="mountain">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Jefferson Akira Fukamizu</a>.
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
