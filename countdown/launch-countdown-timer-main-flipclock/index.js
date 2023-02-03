@@ -8,6 +8,6 @@ var diff = (now.getTime() - start.getTime()) / 1000;
 
 var clock = $('#flip-clock').FlipClock(diff, {
 	clockFace: 'HourlyCounter',
-	countdown: false,
+	countdown: true,
 	showSeconds: true,
 });
