@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.395em;
+}
+@media (min-width: 425px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 21px;
+  }
+}
+
+p, span, a {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.countdown {
+  background-color: #1E1F29;
+  width: 100%;
+}
+.countdown .sky {
+  background-image: url(images/bg-stars.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: max(503px, 100vh - 197px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.countdown .sky h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 109px;
+}
+.countdown .sky #flip-clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.countdown .sky #flip-clock .flip {
+  position: relative;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  width: 74px;
+  height: 148px;
+  overflow-x: hidden;
+  box-shadow: 0px 7px 0px 0px #181a26;
+}
+.countdown .sky #flip-clock .flip::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: #181A26;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+.countdown .sky #flip-clock .flip:nth-child(3), .countdown .sky #flip-clock .flip:nth-child(6) {
+  margin-right: 36px;
+}
+.countdown .sky #flip-clock .flip:nth-child(2), .countdown .sky #flip-clock .flip:nth-child(5), .countdown .sky #flip-clock .flip:nth-child(8) {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.countdown .sky #flip-clock .flip:nth-child(2)::before, .countdown .sky #flip-clock .flip:nth-child(5)::before, .countdown .sky #flip-clock .flip:nth-child(8)::before {
+  left: -7px;
+}
+.countdown .sky #flip-clock .flip:nth-child(2) .up::after, .countdown .sky #flip-clock .flip:nth-child(5) .up::after, .countdown .sky #flip-clock .flip:nth-child(8) .up::after {
+  top: calc(100% - 1px);
+}
+.countdown .sky #flip-clock .flip:nth-child(2) .up .inn, .countdown .sky #flip-clock .flip:nth-child(2) .up .shadow, .countdown .sky #flip-clock .flip:nth-child(5) .up .inn, .countdown .sky #flip-clock .flip:nth-child(5) .up .shadow, .countdown .sky #flip-clock .flip:nth-child(8) .up .inn, .countdown .sky #flip-clock .flip:nth-child(8) .up .shadow {
+  border-radius: 0;
+  border-top-left-radius: 7px;
+  text-shadow: none;
+}
+.countdown .sky #flip-clock .flip:nth-child(2) .up .inn, .countdown .sky #flip-clock .flip:nth-child(5) .up .inn, .countdown .sky #flip-clock .flip:nth-child(8) .up .inn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 72px;
+  color: #FB6087;
+  background: #2C2C44;
+}
+.countdown .sky #flip-clock .flip:nth-child(2) .down, .countdown .sky #flip-clock .flip:nth-child(5) .down, .countdown .sky #flip-clock .flip:nth-child(8) .down {
+  border-bottom-right-radius: 0px;
+}
+.countdown .sky #flip-clock .flip:nth-child(2) .down .inn, .countdown .sky #flip-clock .flip:nth-child(2) .down .shadow, .countdown .sky #flip-clock .flip:nth-child(5) .down .inn, .countdown .sky #flip-clock .flip:nth-child(5) .down .shadow, .countdown .sky #flip-clock .flip:nth-child(8) .down .inn, .countdown .sky #flip-clock .flip:nth-child(8) .down .shadow {
+  border-radius: 0;
+  border-bottom-left-radius: 0px;
+  text-shadow: none;
+}
+.countdown .sky #flip-clock .flip:nth-child(2) .down .inn, .countdown .sky #flip-clock .flip:nth-child(5) .down .inn, .countdown .sky #flip-clock .flip:nth-child(8) .down .inn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 72px;
+  color: #FB6087;
+  background: #34364F;
+}
+.countdown .sky #flip-clock .flip:nth-child(3), .countdown .sky #flip-clock .flip:nth-child(6), .countdown .sky #flip-clock .flip:nth-child(9) {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.countdown .sky #flip-clock .flip:nth-child(3)::before, .countdown .sky #flip-clock .flip:nth-child(6)::before, .countdown .sky #flip-clock .flip:nth-child(9)::before {
+  right: -7px;
+}
+.countdown .sky #flip-clock .flip:nth-child(3) .up::after, .countdown .sky #flip-clock .flip:nth-child(6) .up::after, .countdown .sky #flip-clock .flip:nth-child(9) .up::after {
+  top: calc(100% - 1px);
+}
+.countdown .sky #flip-clock .flip:nth-child(3) .up .inn, .countdown .sky #flip-clock .flip:nth-child(3) .up .shadow, .countdown .sky #flip-clock .flip:nth-child(6) .up .inn, .countdown .sky #flip-clock .flip:nth-child(6) .up .shadow, .countdown .sky #flip-clock .flip:nth-child(9) .up .inn, .countdown .sky #flip-clock .flip:nth-child(9) .up .shadow {
+  border-radius: 0;
+  border-top-right-radius: 7px;
+  text-shadow: none;
+}
+.countdown .sky #flip-clock .flip:nth-child(3) .up .inn, .countdown .sky #flip-clock .flip:nth-child(6) .up .inn, .countdown .sky #flip-clock .flip:nth-child(9) .up .inn {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 72px;
+  color: #FB6087;
+  background: #2C2C44;
+}
+.countdown .sky #flip-clock .flip:nth-child(3) .down, .countdown .sky #flip-clock .flip:nth-child(6) .down, .countdown .sky #flip-clock .flip:nth-child(9) .down {
+  border-bottom-left-radius: 0px;
+}
+.countdown .sky #flip-clock .flip:nth-child(3) .down .inn, .countdown .sky #flip-clock .flip:nth-child(3) .down .shadow, .countdown .sky #flip-clock .flip:nth-child(6) .down .inn, .countdown .sky #flip-clock .flip:nth-child(6) .down .shadow, .countdown .sky #flip-clock .flip:nth-child(9) .down .inn, .countdown .sky #flip-clock .flip:nth-child(9) .down .shadow {
+  border-radius: 0;
+  border-bottom-right-radius: 0px;
+  text-shadow: none;
+}
+.countdown .sky #flip-clock .flip:nth-child(3) .down .inn, .countdown .sky #flip-clock .flip:nth-child(6) .down .inn, .countdown .sky #flip-clock .flip:nth-child(9) .down .inn {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 72px;
+  color: #FB6087;
+  background: #34364F;
+}
+.countdown .sky #flip-clock .flip-clock-before, .countdown .sky #flip-clock .flip-clock-active {
+  border-radius: 0 !important;
+  background: none !important;
+}
+.countdown .sky #flip-clock .flip-clock-divider {
+  display: none;
+}
+.countdown .mountain {
+  background-image: url(images/pattern-hills.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 197px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.countdown .mountain .social_medias {
+  margin-bottom: 20px;
+}
+.countdown .mountain .social_medias ul {
+  display: flex;
+}
+.countdown .mountain .social_medias ul li + li {
+  margin-left: 34px;
+}
+
+/*# sourceMappingURL=style.css.map */

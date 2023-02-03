@@ -1,0 +1,268 @@
+.countdown {
+    background-color: $terciaryColor;
+    width: 100%;
+
+    .sky {
+        background-image: url(images/bg-stars.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: max(calc(700px - 197px), calc(100vh - 197px));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 109px;
+        }
+
+        .flip-clock {
+            text-align: center;
+            perspective: 600px;
+            margin: 0 auto;
+          
+            *,
+            *:before,
+            *:after { box-sizing: border-box; }
+
+            &__piece {
+              display: inline-block;
+              margin: 0 0.2vw;
+              
+              @media (min-width: 1000px) {
+                margin: 0 5px;
+              }
+            }
+
+            &__slot {
+                font-size: 14px;
+                line-height: 12px;
+                letter-spacing: 0.42em;
+                text-transform: uppercase;
+                color: $primaryColor;
+                display: block;
+            }
+                
+        }
+
+        .flip-card {
+            display: block;
+            position: relative;
+            padding-bottom: 73.5px;
+            //font-size: 2.25rem;
+            line-height: 1;
+            width: 148px;
+            height: 147px;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-bottom: 7px solid #181A26;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -7px;
+                transform: translateY(-50%);
+                width: 14px;
+                height: 14px;
+                display: block;
+                background-color: #1E1F29;
+                border-radius: 50%;
+                z-index: 8;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -7px;
+                transform: translateY(-50%);
+                width: 14px;
+                height: 14px;
+                display: block;
+                background-color: #1E1F29;
+                border-radius: 50%;
+                z-index: 8;
+            }
+
+            @media (min-width: 1000px) {
+                &__slot {
+                    font-size: 72px; 
+                }
+
+                .flip-card {
+                    font-size: 72px; 
+                }
+            }
+            
+            
+            &__top,
+            &__bottom,
+            &__back-bottom,
+            &__back::before,
+            &__back::after {
+                display: block;
+                height: 50%;
+                width: 100%;
+                font-size: 72px;
+                color: $secondaryColor;
+                background: #2C2C44;
+                border-radius: 10px 10px 0 0;
+                padding: 35px 0;
+                backface-visiblity: hidden;
+                transform-style: preserve-3d;
+            }
+                
+            &__bottom,
+            &__back-bottom {
+                color: $secondaryColor;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                border-top: solid 1px #000;
+                background: #34364F;
+                border-radius: 0 0 10px 10px;
+                pointer-events: none;
+                overflow: hidden;
+                z-index: 2;
+                width: 100%;
+            }
+                
+            &__back-bottom {
+                z-index: 1;
+            }
+                
+            &__bottom::after,
+            &__back-bottom::after {
+                display: block;
+                margin-top: -70px;
+            }
+                
+            &__back::before,
+            &__bottom::after,
+            &__back-bottom::after {
+                content: attr(data-value);
+            }
+                
+            &__back {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                left: 0%;
+                pointer-events: none;
+            }
+            
+            &__back::before {
+                transform: rotateX(0deg);
+                position: relative;
+                overflow: hidden;
+                z-index: -1;
+            }
+
+            &__bottom {
+                transform: rotateX(0deg);
+            }
+        }
+
+        .flip .flip-card__back::before {
+            z-index: 1;
+            animation-fill-mode: both;
+            transform-origin: center bottom;
+            animation-delay: 0s;
+            animation-duration: 1s;
+            transition-timing-function: cubic-bezier(.37,.01,.94,.35);
+            animation-name: flipTop; 
+            // animation-iteration-count: infinite;
+            box-shadow: 0px 0px 15px 4px #181a26;
+        }
+        
+        .flip .flip-card__bottom {
+            transform-origin: center bottom;
+            animation-fill-mode: both;
+            animation-delay: 0s;
+            animation-duration: 1s;// 0.3s;
+            transition-timing-function: cubic-bezier(.37,.01,.94,.35);//cubic-bezier(.15,.45,.28,1);
+            animation-name: flipBottomNew;
+            // animation-iteration-count: infinite;
+            box-shadow: 0px 0px 15px 4px #181a26;
+        }
+          
+    }
+
+    .mountain {
+        background-image: url(images/pattern-hills.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 197px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .social_medias {
+            margin-bottom: 20px;
+
+            ul {
+                display: flex;
+
+                li {
+                    + li {
+                        margin-left: 34px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes flipTop {
+    0% {
+      transform: rotateX(0deg) translateZ(2px);
+      z-index: 2;
+    }
+    1%, 99% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotateX(90deg) translateZ(2px);
+      opacity: 0;
+    }
+}
+  
+@keyframes flipBottomNew {
+    0% {
+      transform: rotateX(-90deg) translateZ(2px);
+      z-index: 2;
+    }
+    1%, 99% {
+        opacity: 1;
+      }
+    100% {
+      transform: rotateX(0deg);
+      opacity: 0;
+    }
+}
+
+@keyframes flipBottom {
+    0%, 50% {
+        z-index: -1;
+        transform: rotateX(0deg);
+        opacity: 0;
+    }
+    51% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(-90deg);
+        z-index: 5;
+    }
+}

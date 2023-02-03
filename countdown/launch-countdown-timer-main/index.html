@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Launch countdown timer</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="countdown">
+    <div class="sky">
+      <h1>We're launching soon</h1>
+      <div class="flip-clock" data-date="2017-02-11">
+        <span class="flip-clock__piece flip days" style="">
+          <span class="flip-clock__card flip-card">
+            <b class="flip-card__top">00</b>
+            <b class="flip-card__bottom" data-value="00"></b>
+            <b class="flip-card__back" data-value="00"></b>
+            <b class="flip-card__back-bottom" data-value="00"></b>
+          </span>
+          <span class="flip-clock__slot">Days</span>
+        </span><span class="flip-clock__piece flip hours" style="">
+          <span class="flip-clock__card flip-card">
+            <b class="flip-card__top">00</b>
+            <b class="flip-card__bottom" data-value="00"></b>
+            <b class="flip-card__back" data-value="00"></b>
+            <b class="flip-card__back-bottom" data-value="00"></b>
+          </span>
+          <span class="flip-clock__slot">Hours</span>
+        </span><span class="flip-clock__piece flip minutes" style="">
+          <span class="flip-clock__card flip-card">
+            <b class="flip-card__top">00</b>
+            <b class="flip-card__bottom" data-value="00"></b>
+            <b class="flip-card__back" data-value="00"></b>
+            <b class="flip-card__back-bottom" data-value="00"></b>
+          </span>
+          <span class="flip-clock__slot">Minutes</span>
+        </span><span class="flip-clock__piece flip seconds" style="">
+          <span class="flip-clock__card flip-card">
+            <b class="flip-card__top">00</b>
+            <b class="flip-card__bottom" data-value="00"></b>
+            <b class="flip-card__back" data-value="00"></b>
+            <b class="flip-card__back-bottom" data-value="00"></b>
+          </span>
+          <span class="flip-clock__slot">Seconds</span>
+        </span>
+      </div>
+    </div>
+    <div class="mountain">
+      <nav class="social_medias">
+        <ul>
+          <li><a title="Facebook" href="#"><img src="images/icon-facebook.svg" alt=""></a></li>
+          <li><a title="Pinterest" href="#"><img src="images/icon-pinterest.svg" alt=""></a></li>
+          <li><a title="Instagram" href="#"><img src="images/icon-instagram.svg" alt=""></a></li>
+        </ul>
+      </nav>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Jefferson Akira Fukamizu</a>.
+      </div>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
