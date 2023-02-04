@@ -53,7 +53,7 @@
                 }
                 
 
-                &:nth-child(2), &:nth-child(5), &:nth-child(8) {
+                &:nth-child(2), &:nth-child(5), &:nth-child(8), &:nth-child(11) {
                     border-top-left-radius: 7px;
                     border-bottom-left-radius: 7px;
 
@@ -105,7 +105,7 @@
                     }
                 }
 
-                &:nth-child(3), &:nth-child(6), &:nth-child(9) {
+                &:nth-child(3), &:nth-child(6), &:nth-child(9), &:nth-child(12) {
                     border-top-right-radius: 7px;
                     border-bottom-right-radius: 7px;
 

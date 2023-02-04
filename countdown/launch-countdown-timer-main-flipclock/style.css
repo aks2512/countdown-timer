@@ -88,7 +88,7 @@ img {
 .countdown .sky #flip-clock .flip:nth-child(3), .countdown .sky #flip-clock .flip:nth-child(6) {
   margin-right: 36px;
 }
-.countdown .sky #flip-clock .flip:nth-child(2), .countdown .sky #flip-clock .flip:nth-child(5), .countdown .sky #flip-clock .flip:nth-child(8) {
+.countdown .sky #flip-clock .flip:nth-child(2), .countdown .sky #flip-clock .flip:nth-child(5), .countdown .sky #flip-clock .flip:nth-child(8), .countdown .sky #flip-clock .flip:nth-child(11) {
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
 }
@@ -129,7 +129,7 @@ img {
   color: #FB6087;
   background: #34364F;
 }
-.countdown .sky #flip-clock .flip:nth-child(3), .countdown .sky #flip-clock .flip:nth-child(6), .countdown .sky #flip-clock .flip:nth-child(9) {
+.countdown .sky #flip-clock .flip:nth-child(3), .countdown .sky #flip-clock .flip:nth-child(6), .countdown .sky #flip-clock .flip:nth-child(9), .countdown .sky #flip-clock .flip:nth-child(12) {
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
 }
