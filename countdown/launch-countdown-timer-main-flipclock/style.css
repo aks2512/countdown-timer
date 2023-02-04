@@ -85,7 +85,7 @@ img {
   transform: translateY(-50%);
   z-index: 999;
 }
-.countdown .sky #flip-clock .flip:nth-child(3), .countdown .sky #flip-clock .flip:nth-child(6) {
+.countdown .sky #flip-clock .flip:nth-child(3), .countdown .sky #flip-clock .flip:nth-child(6), .countdown .sky #flip-clock .flip:nth-child(8) {
   margin-right: 36px;
 }
 .countdown .sky #flip-clock .flip:nth-child(2), .countdown .sky #flip-clock .flip:nth-child(5), .countdown .sky #flip-clock .flip:nth-child(8), .countdown .sky #flip-clock .flip:nth-child(11) {
