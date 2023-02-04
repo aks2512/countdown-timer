@@ -13,3 +13,4 @@ As outras duas pastas contém as soluções desenvolvidas.
   <li>- launch-countdown-timer-main-fliplock (resolvi tentar utilizar a biblioteca fliplock, para isso tive de utilizar o jquery, ambos estão como CDN no arquivo index.html)</li>
 </ul>
 
+Git Page: https://aks2512.github.io/countdown-timer/
