@@ -1,13 +1,13 @@
-var start = new Date();
-start.setDate(start.getDate());
-start.setHours(0,0,0,0)
-//======================================
-var future   = new Date('1 de Janeiro 2024');
+var date = new Date('1 de Janeiro 2024'),
+days = date.getDate()*60*60*24,
+hours = date.getHours()*60*60,
+minutes = date.getMinutes()*60,
+sec = date.getSeconds(),
 
-var diff = (future - start) / 1000;
-
-var clock = $('#flip-clock').FlipClock(diff, {
+var clock = $('#flip-clock').FlipClock({
 	clockFace: 'DailyCounter',
 	countdown: true,
 	showSeconds: true,
 });
+
+clock.setTime(days+hours+minutes+sec);
