@@ -92,18 +92,18 @@ img {
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
 }
-.countdown .sky #flip-clock .flip:nth-child(2)::before, .countdown .sky #flip-clock .flip:nth-child(5)::before, .countdown .sky #flip-clock .flip:nth-child(8)::before {
+.countdown .sky #flip-clock .flip:nth-child(2)::before, .countdown .sky #flip-clock .flip:nth-child(5)::before, .countdown .sky #flip-clock .flip:nth-child(8)::before, .countdown .sky #flip-clock .flip:nth-child(11)::before {
   left: -7px;
 }
-.countdown .sky #flip-clock .flip:nth-child(2) .up::after, .countdown .sky #flip-clock .flip:nth-child(5) .up::after, .countdown .sky #flip-clock .flip:nth-child(8) .up::after {
+.countdown .sky #flip-clock .flip:nth-child(2) .up::after, .countdown .sky #flip-clock .flip:nth-child(5) .up::after, .countdown .sky #flip-clock .flip:nth-child(8) .up::after, .countdown .sky #flip-clock .flip:nth-child(11) .up::after {
   top: calc(100% - 1px);
 }
-.countdown .sky #flip-clock .flip:nth-child(2) .up .inn, .countdown .sky #flip-clock .flip:nth-child(2) .up .shadow, .countdown .sky #flip-clock .flip:nth-child(5) .up .inn, .countdown .sky #flip-clock .flip:nth-child(5) .up .shadow, .countdown .sky #flip-clock .flip:nth-child(8) .up .inn, .countdown .sky #flip-clock .flip:nth-child(8) .up .shadow {
+.countdown .sky #flip-clock .flip:nth-child(2) .up .inn, .countdown .sky #flip-clock .flip:nth-child(2) .up .shadow, .countdown .sky #flip-clock .flip:nth-child(5) .up .inn, .countdown .sky #flip-clock .flip:nth-child(5) .up .shadow, .countdown .sky #flip-clock .flip:nth-child(8) .up .inn, .countdown .sky #flip-clock .flip:nth-child(8) .up .shadow, .countdown .sky #flip-clock .flip:nth-child(11) .up .inn, .countdown .sky #flip-clock .flip:nth-child(11) .up .shadow {
   border-radius: 0;
   border-top-left-radius: 7px;
   text-shadow: none;
 }
-.countdown .sky #flip-clock .flip:nth-child(2) .up .inn, .countdown .sky #flip-clock .flip:nth-child(5) .up .inn, .countdown .sky #flip-clock .flip:nth-child(8) .up .inn {
+.countdown .sky #flip-clock .flip:nth-child(2) .up .inn, .countdown .sky #flip-clock .flip:nth-child(5) .up .inn, .countdown .sky #flip-clock .flip:nth-child(8) .up .inn, .countdown .sky #flip-clock .flip:nth-child(11) .up .inn {
   display: flex;
   align-items: center;
   justify-content: end;
@@ -112,15 +112,15 @@ img {
   color: #FB6087;
   background: #2C2C44;
 }
-.countdown .sky #flip-clock .flip:nth-child(2) .down, .countdown .sky #flip-clock .flip:nth-child(5) .down, .countdown .sky #flip-clock .flip:nth-child(8) .down {
+.countdown .sky #flip-clock .flip:nth-child(2) .down, .countdown .sky #flip-clock .flip:nth-child(5) .down, .countdown .sky #flip-clock .flip:nth-child(8) .down, .countdown .sky #flip-clock .flip:nth-child(11) .down {
   border-bottom-right-radius: 0px;
 }
-.countdown .sky #flip-clock .flip:nth-child(2) .down .inn, .countdown .sky #flip-clock .flip:nth-child(2) .down .shadow, .countdown .sky #flip-clock .flip:nth-child(5) .down .inn, .countdown .sky #flip-clock .flip:nth-child(5) .down .shadow, .countdown .sky #flip-clock .flip:nth-child(8) .down .inn, .countdown .sky #flip-clock .flip:nth-child(8) .down .shadow {
+.countdown .sky #flip-clock .flip:nth-child(2) .down .inn, .countdown .sky #flip-clock .flip:nth-child(2) .down .shadow, .countdown .sky #flip-clock .flip:nth-child(5) .down .inn, .countdown .sky #flip-clock .flip:nth-child(5) .down .shadow, .countdown .sky #flip-clock .flip:nth-child(8) .down .inn, .countdown .sky #flip-clock .flip:nth-child(8) .down .shadow, .countdown .sky #flip-clock .flip:nth-child(11) .down .inn, .countdown .sky #flip-clock .flip:nth-child(11) .down .shadow {
   border-radius: 0;
   border-bottom-left-radius: 0px;
   text-shadow: none;
 }
-.countdown .sky #flip-clock .flip:nth-child(2) .down .inn, .countdown .sky #flip-clock .flip:nth-child(5) .down .inn, .countdown .sky #flip-clock .flip:nth-child(8) .down .inn {
+.countdown .sky #flip-clock .flip:nth-child(2) .down .inn, .countdown .sky #flip-clock .flip:nth-child(5) .down .inn, .countdown .sky #flip-clock .flip:nth-child(8) .down .inn, .countdown .sky #flip-clock .flip:nth-child(11) .down .inn {
   display: flex;
   align-items: center;
   justify-content: end;
