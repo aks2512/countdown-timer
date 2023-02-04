@@ -4,7 +4,6 @@ var diff = future.getTime()/1000 - today.getTime()/1000;
 
 var clock = $('#flip-clock').FlipClock(diff,{
 	clockFace: 'DailyCounter',
-	countdown: true,
-	showSeconds: true,
+	countdown: true
 });
 
