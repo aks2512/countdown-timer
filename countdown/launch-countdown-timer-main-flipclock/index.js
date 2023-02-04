@@ -7,7 +7,7 @@ var future   = new Date('1 de Janeiro 2024');
 var diff = (future.getTime() - start.getTime()) / 1000;
 
 var clock = $('#flip-clock').FlipClock(diff, {
-	clockFace: 'Counter',
+	clockFace: 'DailyCounter',
 	countdown: true,
 	showSeconds: true,
 });
