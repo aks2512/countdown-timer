@@ -1,4 +1,4 @@
-var date = new Date('1 de Janeiro 2024'),
+var date = new Date('10/2/2023'),
 days = date.getDate()*60*60*24,
 hours = date.getHours()*60*60,
 minutes = date.getMinutes()*60,
