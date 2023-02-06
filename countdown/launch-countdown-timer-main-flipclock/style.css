@@ -63,6 +63,27 @@ img {
   align-items: center;
   justify-content: center;
 }
+.countdown .sky #flip-clock .flip-clock-divider {
+  width: 20px !important;
+}
+.countdown .sky #flip-clock .flip-clock-divider .flip-clock-label {
+  top: unset;
+  bottom: -66px;
+  left: 50%;
+  text-shadow: none;
+  font-size: 14px;
+  width: 148px;
+  line-height: 12px;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: #8385A9;
+  display: block;
+  text-align: center;
+  transform: translateX(10%);
+}
+.countdown .sky #flip-clock .flip-clock-divider .flip-clock-dot {
+  display: none;
+}
 .countdown .sky #flip-clock .flip {
   position: relative;
   margin: 0;
@@ -173,9 +194,6 @@ img {
 .countdown .sky #flip-clock .flip-clock-before, .countdown .sky #flip-clock .flip-clock-active {
   border-radius: 0 !important;
   background: none !important;
-}
-.countdown .sky #flip-clock .flip-clock-divider {
-  display: none;
 }
 .countdown .mountain {
   background-image: url(images/pattern-hills.svg);
