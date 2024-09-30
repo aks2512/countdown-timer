@@ -38,5 +38,5 @@ function timer(date) {
 }
 
 setInterval(function() {
-    timer('1 Janeiro 2024');
+    timer('1 Janeiro 2026');
 }, 1000);
